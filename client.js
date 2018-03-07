@@ -56,7 +56,7 @@ let _moves = [];
 
 $.when(
 	dictionary.start(),
-	server.start({ webSocket: true })
+	server.start({ webSocket: false })
 )
 .then(function()
 {
