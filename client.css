@@ -1,0 +1,121 @@
+* {
+	font-size: 20px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	background: #fffff7;
+	font-family: monospace;
+	zoom: 1;
+}
+
+body {
+	padding: 1rem;
+}
+
+h1 {
+	margin-top: 0;
+	margin-left: 0.5rem;
+	font-size: 1.2em;
+}
+
+h2 {
+	margin: 0 0 0.5rem 0;
+}
+
+button,
+.button {
+	display: inline-block;
+	border: 2px solid #000;
+	padding: 0.25rem 0.5rem;
+	background: transparent;
+	text-align: center;
+	font-family: sans-serif;
+}
+button:hover,
+.button:hover {
+	background-color: #eed;
+	cursor: pointer;
+}
+button[disabled],
+.button[disabled],
+button[disabled]:hover,
+.button[disabled]:hover {
+	background: transparent;
+	cursor: default;
+	opacity: 0.25;	
+}
+
+input {
+	width: 100%;
+	border: 1px solid #800;
+	color: inherit;
+	background: inherit;
+}
+input:hover {
+	background-color: #eed;
+}
+
+
+.languages {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	max-width: 15rem;
+}
+.languages span {
+	display: inline-block;
+	color: #00f;
+	margin: 0 0.1rem;
+	border: 1px dotted #888;
+	padding: 0.1rem 0.2rem;
+}
+.languages span:hover {
+	background-color: #eed;
+	cursor: pointer;
+}
+.languages span.selected {
+	border-style: solid;
+}
+
+.main {
+	position: relative;
+	height: calc(601px + 1rem);
+}
+.main canvas {
+    position: absolute;
+    border: 1px solid #000;
+	background: url(grid.png) repeat;
+	background-position-x: 10px;
+	background-position-y: 10px;
+}
+.main .button {
+    position: absolute;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+}
+
+.highscore {
+	padding: 0.5rem 0;
+}
+
+table {
+	border-spacing: 0;
+}
+tr.ownScore {
+	color: #0a0;
+}
+th.name {
+	min-width: 20rem;
+	text-align: left;
+	border-bottom: 1px dotted #666;
+}
+td.lines {
+	min-width: 3rem;
+	text-align: right;
+	border-bottom: 1px dotted #666;
+}

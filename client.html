@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta content='width=device-width' name='viewport' />
+	<title>Morpion solitaire</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript" src="serverManagerTools.jquery.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+	<link rel="stylesheet" type="text/css" href="client.css" />
+	<link rel="stylesheet" type="text/css" href="serverManagerDialog.css" />
+</head>
+<body>
+<div id="morpionSolitaire">
+
+	<h1>Morpion solitaire</h1>
+
+	<div class="languages">
+		<span v-for="(name, langId) in languageList"
+			  :class="{ selected: langId === lang }"
+			  :title="name"
+			  @click="setLanguage(langId)">
+			  {{ langId }}
+		</span>
+	</div>
+
+	<div class="main">
+		<canvas id="board" width="601" height="601" oncontextmenu="return false;" data-unselectable></canvas>
+	</div>
+
+	<div class="tools">
+		{{ 'lines' | dictionary }}: {{ board.lineCount }}
+		<button
+				@click="finish()"
+				v-if="state !== stateDone"
+				:disabled="board.lineCount === 0">
+			{{ 'finish' | dictionary }}
+		</button>
+		<button 
+				@click="newGame()"
+				v-if="state === stateDone">
+			{{ 'new-game' | dictionary }}
+		</button>
+	</div>
+
+	<div class="highscore">
+		<h2>
+			{{ 'highscore' | dictionary }}
+		</h2>
+		<table>
+			<tr v-for="highscore in highscores"
+			    :class="{ 'ownScore': highscore.own }">
+				<th class="name">
+					{{ highscore.name }}
+					({{ highscore.date | formatDate }})
+				</th>
+				<td class="lines">
+					{{ highscore.lineCount }}
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</div>
+</body>
+</html>

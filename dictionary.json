@@ -1,0 +1,54 @@
+{
+	"en": {
+		"_lang": "English",
+		"_date": "%m/%d/%yyyy",
+		"_datetime": "%m/%d/%yyyy %h:%nn %a",
+
+		"finish": "Finish",
+		"new-game": "Start new game",
+		"lines": "Lines",
+		"highscore": "Highscore",
+
+		"ok": "Ok",
+		"cancel": "Cancel",
+		"close": "Close",
+		"yes": "Yes",
+		"no": "No",
+
+		"yes-key": "y",
+		"no-key": "n",
+
+		"enter-your-name": "Enter your name",
+
+		"new-highscore": "Congratulation! You made it to the highscore table",
+		"same-result": "The exactly same game was already submitted. No highscore",
+		"invalid-data": "Invalid data",
+		"unknown-error": "Unknown error"
+	},
+	"fi": {
+		"_lang": "suomi",
+		"_date": "%d.%m.%yyyy",
+		"_datetime": "%d.%m.%yyyy %h:%nn",
+
+		"finish": "Lopeta",
+		"new-game": "Aloita uusi peli",
+		"lines": "Viivoja",
+		"highscore": "Tulokset",
+
+		"ok": "Ok",
+		"cancel": "Peruuta",
+		"close": "Sulje",
+		"yes": "Kyllä",
+		"no": "Ei",
+
+		"yes-key": "K",
+		"No-key": "E",
+
+		"enter-your-name": "Anna nimesi",
+
+		"new-highscore": "Onneksi olkoon! Pääsit parhaimpien joukkoon",
+		"same-result": "Täsmälleen sama peli on jo pelattu. Ei tulosta",
+		"invalid-data": "Virheellistä dataa",
+		"unknown-error": "Tuntematon virhe"
+	}
+}
