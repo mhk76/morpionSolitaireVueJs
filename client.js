@@ -41,8 +41,8 @@ const stateLineDrawStart = 2
 const stateLineDraw = 3
 const stateDone = 4;
 
-const dictionary = serverManagerTools.dictionary;
-const dialog = serverManagerTools.dialog;
+const dictionary = tools.dictionary;
+const dialog = tools.dialog;
 const server = serverManagerTools.server;
 
 Math.TAU = 2 * Math.PI;
